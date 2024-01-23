@@ -21,7 +21,8 @@
   "rules": {
     "prettier/prettier": "error",
     "react/prop-types": "off",
-    "no-unused-vars": "error"
+    "no-unused-vars": "error",
+    "no-undef": "off"
   },
   "settings": {
     "react": {

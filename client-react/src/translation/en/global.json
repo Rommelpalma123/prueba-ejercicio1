@@ -1,0 +1,32 @@
+{
+  "header": {
+    "todo": "List Todo"
+  },
+
+  "label": {
+    "title": "Note",
+    "category": "Category"
+  },
+
+  "buttom": {
+    "crear": "New Todo"
+  },
+
+  "placeholder": {
+    "place": "Write your Todo"
+  },
+
+  "select": {
+    "item": "Select a categoty",
+    "homework": "Homework",
+    "work": "Work",
+    "pending": "Pending"
+  },
+
+  "lenguage": {
+    "len": "Select a language",
+    "es": "Spanish",
+    "en": "English",
+    "pt": "Portuguese"
+  }
+}

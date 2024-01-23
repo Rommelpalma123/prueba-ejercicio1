@@ -1,0 +1,32 @@
+{
+  "header": {
+    "todo": "Toda a lista"
+  },
+
+  "label": {
+    "title": "Nota",
+    "category": "Categoria"
+  },
+
+  "buttom": {
+    "crear": "Novo Todos"
+  },
+
+  "placeholder": {
+    "place": "Escreva a sua nota"
+  },
+
+  "select": {
+    "item": "Selecione uma categoria",
+    "homework": "Tarefa",
+    "work": "Trabalho",
+    "pending": "Pendente"
+  },
+
+  "lenguage": {
+    "len": "Selecionar uma língua",
+    "es": "Espanhol",
+    "en": "Inglesa",
+    "pt": "Portuguese"
+  }
+}
