@@ -1,0 +1,30 @@
+{
+  "todo": "Toda a lista",
+
+  "title": "Nota",
+  "category": "Categoria",
+
+  "crear": "Novo Todos",
+
+  "place": "Escreva a sua nota",
+
+  "item": "Selecione uma categoria",
+  "homework": "Tarefa",
+  "work": "Trabalho",
+  "pending": "Pendente",
+
+  "len": "Selecionar uma língua",
+  "es": "es",
+  "en": "en",
+  "pt": "pt",
+
+  "botoncancelar": "Cancelamento",
+  "botoneliminar": "Suprimir",
+  "botoncancelar": "Cancelamento",
+  "botoncrear": "Criar",
+
+  "eliminar": "Tem a certeza de que pretende remover esta tarefa?",
+
+  "tarea": "Tarefa",
+  "categoria": "Categoria"
+}

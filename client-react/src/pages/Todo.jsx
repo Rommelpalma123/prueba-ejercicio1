@@ -75,7 +75,7 @@ export const Todo = () => {
   useEffect(() => {
     getListTodo();
   }, []);
-  
+
   return (
     <div className='container-md mt-3'>
       <div className='d-flex gap-2 align-items-center'>
@@ -144,7 +144,7 @@ export const Todo = () => {
           <div className='card-body'>
             {todos.map((item) => (
               <div className={`rounded ${categoryColors[item?.category]}`} key={item?._id}>
-                <div className='d-flex justify-centent-center gap-2 p-2 mt-1'>
+                <div className='d-flex align-items-center gap-2 p-2  my-2'>
                   <div>
                     <MdDelete
                       onClick={() => {
@@ -154,11 +154,7 @@ export const Todo = () => {
                       size={25}
                     />
                   </div>
-                  <div>
-                    <li className='list-group-item'>
-                      <h5>{item?.title}</h5>
-                    </li>
-                  </div>
+                  <p className='p-0 m-0'>{item?.title}</p>
                 </div>
               </div>
             ))}

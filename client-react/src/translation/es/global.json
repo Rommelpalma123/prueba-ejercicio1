@@ -1,6 +1,6 @@
 {
   "header": {
-    "todo": "Lista de Todos"
+    "todo": "Lista de Tareas"
   },
 
   "label": {
@@ -9,7 +9,7 @@
   },
 
   "buttom": {
-    "crear": "Nuevo Todo"
+    "crear": "Nueva Tarea"
   },
 
   "placeholder": {

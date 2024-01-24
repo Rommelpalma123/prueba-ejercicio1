@@ -1,0 +1,30 @@
+{
+  "todo": "List Todo",
+
+  "title": "Note",
+  "category": "Category",
+
+  "crear": "New Todo",
+
+  "place": "Write your Todo",
+
+  "item": "Select a categoty",
+  "homework": "Homework",
+  "work": "Work",
+  "pending": "Pending",
+
+  "len": "Select a language",
+  "es": "es",
+  "en": "en",
+  "pt": "pt",
+
+  "botoncancelar": "Cancel",
+  "botoneliminar": "Delete",
+  "botoncancelar": "Cancel",
+  "botoncrear": "Create",
+
+  "eliminar": "Are you sure to eliminate this task?",
+
+  "tarea": "Todo",
+  "categoria": "Category"
+}
