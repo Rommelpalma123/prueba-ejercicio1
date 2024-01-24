@@ -1,5 +1,5 @@
 export const categoryColors = {
-  tarea: 'bg-success bg-opacity-50',
-  trabajo: 'bg-warning bg-opacity-50',
-  pendiente: 'bg-secondary bg-opacity-50',
+  Tarea: 'bg-success bg-opacity-50',
+  Trabajo: 'bg-warning bg-opacity-50',
+  Pendiente: 'bg-secondary bg-opacity-50',
 };

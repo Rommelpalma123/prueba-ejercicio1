@@ -135,9 +135,9 @@ export const Todo = () => {
                 className='form-select'
                 aria-label='Default select example'>
                 <option value=''>{t('select.item')}</option>
-                <option value='tarea'>{t('select.homework')}</option>
-                <option value='trabajo'>{t('select.work')}</option>
-                <option value='pendiente'>{t('select.pending')}</option>
+                <option value='Tarea'>{t('select.homework')}</option>
+                <option value='Trabajo'>{t('select.work')}</option>
+                <option value='Pendiente'>{t('select.pending')}</option>
               </select>
             </div>
           </div>

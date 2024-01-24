@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://192.168.3.13:5000/todos';
+const API_URL = 'https://todo-backend-ae4l.onrender.com/todos';
 
 export const postAxios = (data: any) => {
   return new Promise((resolve, reject) =>
