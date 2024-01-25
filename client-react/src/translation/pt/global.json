@@ -5,7 +5,8 @@
 
   "label": {
     "title": "Nota",
-    "category": "Categoria"
+    "category": "Categoria",
+    "empty": "nenhuma tarefa de momento"
   },
 
   "buttom": {

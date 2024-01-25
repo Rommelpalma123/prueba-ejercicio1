@@ -5,10 +5,13 @@ import { MdDelete } from 'react-icons/md';
 import { categoryColors } from '@/helpers/constanst';
 import { RiTranslate } from 'react-icons/ri';
 import { useTranslation } from 'react-i18next';
+import { useLoader } from '@/context/LoaderContext';
 
 export const Todo = () => {
   const server = useServer();
   const [t, i18n] = useTranslation('global');
+  const { showLoader, hideLoader } = useLoader();
+
   const [todo, setTodo] = useState({
     title: '',
     category: '',
@@ -17,6 +20,7 @@ export const Todo = () => {
 
   const create = async () => {
     if (validateForm()) {
+      showLoader();
       try {
         const data = await server.createTodo(todo);
         showBasicAlert('Nota creada con exito', 'success');
@@ -28,6 +32,7 @@ export const Todo = () => {
         );
       } finally {
         getListTodo();
+        hideLoader();
       }
     }
   };
@@ -49,11 +54,14 @@ export const Todo = () => {
   };
 
   const getListTodo = async () => {
+    showLoader();
     try {
       const data = await server.getTodos();
       setTodos(data);
     } catch (error) {
       console.log(error);
+    } finally {
+      hideLoader();
     }
   };
 
@@ -62,6 +70,7 @@ export const Todo = () => {
   };
 
   const deleteTodo = async (idTodo) => {
+    showLoader();
     try {
       await server.deleteTodo(idTodo);
       showBasicAlert('Todo eliminado correctamente', 'success');
@@ -69,6 +78,7 @@ export const Todo = () => {
       console.log(error);
     } finally {
       getListTodo();
+      hideLoader();
     }
   };
 
@@ -142,22 +152,29 @@ export const Todo = () => {
             </div>
           </div>
           <div className='card-body'>
-            {todos.map((item) => (
-              <div className={`rounded ${categoryColors[item?.category]}`} key={item?._id}>
-                <div className='d-flex align-items-center gap-2 p-2  my-2'>
-                  <div>
-                    <MdDelete
-                      onClick={() => {
-                        deleteTodo(item?._id);
-                      }}
-                      color='red'
-                      size={25}
-                    />
+            {todos.length > 0 ? (
+              todos.map((item) => (
+                <div className={`rounded ${categoryColors[item?.category]}`} key={item?._id}>
+                  <div className='d-flex align-items-center gap-2 p-2  my-2'>
+                    <div>
+                      <MdDelete
+                        style={{ cursor: 'pointer' }}
+                        onClick={() => {
+                          deleteTodo(item?._id);
+                        }}
+                        color='red'
+                        size={25}
+                      />
+                    </div>
+                    <p className='p-0 m-0'>{item?.title}</p>
                   </div>
-                  <p className='p-0 m-0'>{item?.title}</p>
                 </div>
+              ))
+            ) : (
+              <div className='d-flex justify-content-center'>
+                <p className='p-0 m-0'>{t('label.empty')}</p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </div>

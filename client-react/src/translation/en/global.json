@@ -1,11 +1,12 @@
 {
   "header": {
-    "todo": "List Todo"
+    "todo": "Todo List"
   },
 
   "label": {
     "title": "Note",
-    "category": "Category"
+    "category": "Category",
+    "empty": "No tasks at the moment"
   },
 
   "buttom": {
