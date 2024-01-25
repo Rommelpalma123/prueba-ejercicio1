@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 
-import { Loader } from '@/components/loader/loader';
+import { Loader } from '@/components/loader/Loader';
 
 export const loaderContext = createContext(null);
 
